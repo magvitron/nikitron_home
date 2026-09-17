@@ -591,6 +591,12 @@ section {
     color: #777;
     font-size: 13px; }
 
+.project-board-heading {
+  margin: 55px 0 25px; }
+  .project-board-heading h3 {
+    margin: 0;
+    font-size: 22px; }
+
 .wiring-diagram {
   position: relative;
   min-height: 360px;
