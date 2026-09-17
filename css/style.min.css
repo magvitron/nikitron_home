@@ -540,6 +540,196 @@ section {
   text-align: center; }
 
 /*=====  End of PORTFOLIO  ======*/
+
+/*===============================
+=            PROJECTS            =
+===============================*/
+.project-kicker {
+  color: #ff00cc;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+.project-intro,
+.project-gallery,
+.project-details,
+.project-wiring,
+.project-process {
+  padding: 90px 0; }
+
+.project-image-frame {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 14px 14px 0 #f0f0f0; }
+  .project-image-frame img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover; }
+
+.project-image-label {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 8px 14px;
+  color: #fff;
+  background: #ff00cc;
+  font-size: 12px;
+  text-transform: uppercase; }
+
+.project-gallery-item {
+  margin: 0;
+  background: #fff; }
+  .project-gallery-item img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover; }
+  .project-gallery-item figcaption {
+    padding: 14px 0 0;
+    color: #777;
+    font-size: 13px; }
+
+.wiring-diagram {
+  position: relative;
+  min-height: 360px;
+  overflow: hidden;
+  background: #202020;
+  color: #fff; }
+
+.wiring-node {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 150px;
+  min-height: 90px;
+  padding: 15px;
+  border: 1px solid #ff00cc;
+  background: #292929;
+  text-align: center;
+  font-size: 12px; }
+  .wiring-node-label {
+    margin-bottom: 6px;
+    color: #ff00cc;
+    font-size: 15px;
+    font-weight: 700; }
+  .wiring-node-note {
+    color: #aaa;
+    font-size: 11px; }
+
+.wiring-node-controller {
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.wiring-flow {
+  position: absolute;
+  top: 145px;
+  right: 24px;
+  left: 24px; }
+
+.wiring-flow-row {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 22px; }
+
+.wiring-flow-device,
+.wiring-flow-connector {
+  display: flex;
+  min-height: 62px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid #ff00cc;
+  text-align: center;
+  font-size: 11px; }
+  .wiring-flow-device {
+    flex: 1;
+    color: #ff00cc;
+    font-weight: 700; }
+  .wiring-flow-connector {
+    position: relative;
+    flex: 1.25;
+    border-right: 0;
+    border-left: 0;
+    color: #fff; }
+    .wiring-flow-connector:after {
+      position: absolute;
+      top: 50%;
+      right: -5px;
+      width: 8px;
+      height: 8px;
+      border-top: 1px solid #ff00cc;
+      border-right: 1px solid #ff00cc;
+      content: '';
+      transform: translateY(-50%) rotate(45deg); }
+  .wiring-flow-row small {
+    color: #aaa;
+    font-size: 10px; }
+
+.wiring-diagram-note {
+  position: absolute;
+  right: 24px;
+  bottom: 16px;
+  left: 24px;
+  margin: 0;
+  color: #aaa;
+  font-size: 11px;
+  text-align: center; }
+
+.project-pin-table {
+  margin-bottom: 20px;
+  background: #fff; }
+  .project-pin-table th,
+  .project-pin-table td {
+    padding: 14px;
+    border-color: #e5e5e5;
+    vertical-align: middle; }
+  .project-pin-table th {
+    color: #ff00cc;
+    font-size: 12px;
+    text-transform: uppercase; }
+
+.project-note {
+  color: #555;
+  font-size: 13px; }
+
+.project-step {
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e5e5; }
+  .project-step span {
+    min-width: 48px;
+    color: #ff00cc;
+    font-weight: 700; }
+  .project-step p {
+    margin: 0; }
+
+@media (max-width: 767px) {
+  .project-intro,
+  .project-gallery,
+  .project-details,
+  .project-wiring,
+  .project-process {
+    padding: 60px 0; }
+  .project-image-frame img {
+    height: 260px; }
+  .project-gallery-item {
+    margin-bottom: 30px; }
+  .wiring-diagram {
+    min-height: 430px; }
+  .wiring-node-oled {
+    left: 5%; }
+  .wiring-flow {
+    top: 145px;
+    right: 12px;
+    left: 12px; }
+}
+
 /*===============================
 =            SideNav            =
 ===============================*/
