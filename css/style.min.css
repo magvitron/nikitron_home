@@ -1043,6 +1043,16 @@ section {
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 1px; }
+  .company-logo-image {
+    display: block;
+    width: 100%;
+    height: 72px;
+    margin-bottom: 14px;
+    object-fit: contain; }
+  .continental-logo-image {
+    padding: 6px 18px; }
+  .ebs-logo-image {
+    padding: 14px 8px; }
   .ebs-logo,
   .cable-logo {
     width: auto;
