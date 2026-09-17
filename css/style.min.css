@@ -8,7 +8,10 @@ html, body {
 
 body {
   font-family: 'Lato', sans-serif;
-  font-weight: 300; }
+  font-weight: 400;
+  color: #3f4650;
+  font-size: 16px;
+  line-height: 1.65; }
 
 h1,
 h2,
@@ -23,7 +26,24 @@ h6,
 .h5,
 .h6 {
   font-family: 'Work Sans', sans-serif;
-  margin-top: 0; }
+  margin-top: 0;
+  color: #252b33;
+  line-height: 1.25; }
+
+p {
+  line-height: 1.7; }
+
+.section-title {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.25; }
+
+.section-sub-title {
+  max-width: 760px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.7; }
 
 a {
   color: #ff00cc;
@@ -123,18 +143,19 @@ section {
     background: linear-gradient(to right, #333399, #ff00cc);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   .jumbotron h1 {
-    line-height: .9;
+    max-width: 100%;
+    line-height: .98;
     font-weight: bold;
     display: inline-block;
     border: 15px solid #fff;
     padding: 30px;
-    font-size: 9rem;
+    font-size: 7rem;
     opacity: 0;
     animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
     animation-delay: .8s; }
 
 .jumbotron-single h1 {
-  font-size: 3rem !important; }
+  font-size: clamp(2.5rem, 6vw, 3rem) !important; }
 
 .overlay {
   color: #fff; }
@@ -577,8 +598,33 @@ section {
 .project-gallery,
 .project-details,
 .project-wiring,
-.project-process {
+.project-process,
+.project-impedance {
   padding: 90px 0; }
+
+.impedance-gallery figure {
+  margin: 0 0 30px; }
+  .impedance-gallery img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover; }
+  .impedance-gallery figcaption {
+    padding-top: 12px;
+    color: #777;
+    font-size: 13px; }
+
+.power-gallery figure {
+  margin: 0 0 30px; }
+  .power-gallery img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover; }
+  .power-gallery figcaption {
+    padding-top: 12px;
+    color: #777;
+    font-size: 13px; }
 
 .project-image-frame {
   position: relative;
@@ -746,7 +792,8 @@ section {
   .project-gallery,
   .project-details,
   .project-wiring,
-  .project-process {
+  .project-process,
+  .project-impedance {
     padding: 60px 0; }
   .project-image-frame img {
     height: 260px; }
@@ -971,12 +1018,74 @@ section {
     padding: 10px; } }
 
 @media (max-width: 767px) {
+  body {
+    font-size: 15px; }
+  .navbar-brand {
+    max-width: calc(100% - 56px);
+    font-size: 24px; }
+  .navbar-brand h3 {
+    font-size: 24px;
+    line-height: 1.15; }
   .jumbotron h1 {
-    font-size: 6rem; }
+    font-size: 3.25rem;
+    border-width: 8px;
+    padding: 18px; }
+  .jumbotron-single {
+    min-height: 420px; }
+  .jumbotron-single h1 {
+    font-size: 2.5rem !important; }
+  .section-content {
+    padding-top: 56px;
+    padding-bottom: 56px; }
+  .section-title {
+    font-size: 1.8rem;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .section-sub-title {
+    padding-right: 12px;
+    padding-left: 12px; }
+  .feature-item {
+    padding: 22px !important; }
+  .rectangle-1,
+  .rectangle-2,
+  .rectangle-transparent-1,
+  .rectangle-transparent-2,
+  .circle-1,
+  .circle-2,
+  .circle-3,
+  .triangle {
+    display: none; }
+  .owl-carousel,
+  .owl-carousel .owl-stage-outer,
+  .client-slider,
+  .client-holder {
+    overflow: hidden; }
   .grid-item {
     width: 100%; }
   .progress {
     height: 30px;
     font-size: 16px; } }
+
+@media (hover: none), (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important; }
+  .rectangle-transparent-1,
+  .rectangle-transparent-2,
+  .circle-1,
+  .circle-2,
+  .circle-3,
+  .triangle {
+    animation: none; }
+  .bg-fixed {
+    background-attachment: scroll; } }
+
+@media (min-width: 768px) {
+  .bg-fixed {
+    background-attachment: scroll; } }
 
 /*=====  End of RESPONSIVE  ======*/
