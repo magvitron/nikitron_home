@@ -1026,29 +1026,36 @@ section {
 .company-item {
   position: relative;
   min-height: 160px;
-  overflow: hidden;
-  padding: 0 !important;
+  padding: 24px 20px !important;
   border: 1px solid rgba(255, 255, 255, 0.28);
   text-align: center; }
-  .company-item:after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.08));
-    content: ''; }
-  .company-item img {
-    display: block;
-    width: 100%;
-    height: 160px;
-    object-fit: cover; }
+  .company-logo {
+    display: inline-flex;
+    width: 72px;
+    height: 72px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px; }
+  .ebs-logo,
+  .cable-logo {
+    width: auto;
+    min-width: 72px;
+    padding: 0 12px;
+    border-radius: 4px;
+    font-size: 18px; }
+  .ebs-logo {
+    border-color: #ff00cc; }
+  .cable-logo {
+    border-color: #fff; }
   .company-item-name {
-    position: absolute;
-    right: 12px;
-    bottom: 15px;
-    left: 12px;
-    z-index: 1;
+    display: block;
     font-family: 'Work Sans', sans-serif;
     font-size: 21px;
     font-weight: 700;
