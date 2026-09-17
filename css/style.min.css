@@ -544,6 +544,28 @@ section {
 /*===============================
 =            PROJECTS            =
 ===============================*/
+.service-kicker {
+  color: #ff00cc;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+.battery-service-section {
+  padding: 90px 0; }
+
+.battery-service-gallery figure {
+  margin: 0; }
+  .battery-service-gallery img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover; }
+  .battery-service-gallery figcaption {
+    padding-top: 14px;
+    color: #777;
+    font-size: 13px; }
+
 .project-kicker {
   color: #ff00cc;
   font-size: 12px;
@@ -716,6 +738,10 @@ section {
     margin: 0; }
 
 @media (max-width: 767px) {
+  .battery-service-section {
+    padding: 60px 0; }
+  .battery-service-gallery figure {
+    margin-bottom: 30px; }
   .project-intro,
   .project-gallery,
   .project-details,
