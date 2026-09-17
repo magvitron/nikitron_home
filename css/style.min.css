@@ -608,6 +608,9 @@ section {
 .project-detector {
   padding: 90px 0; }
 
+.project-lora {
+  padding: 90px 0; }
+
 .misc-category {
   margin-top: 55px; }
   .misc-category h3 {
@@ -819,7 +822,8 @@ section {
   .project-process,
   .project-impedance,
   .project-misc,
-  .project-detector {
+  .project-detector,
+  .project-lora {
     padding: 60px 0; }
   .project-image-frame img {
     height: 260px; }
