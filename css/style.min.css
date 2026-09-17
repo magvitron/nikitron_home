@@ -1024,28 +1024,35 @@ section {
   text-align: center; }
 
 .company-item {
-  min-height: 120px;
-  padding: 24px 30px !important;
+  position: relative;
+  min-height: 160px;
+  overflow: hidden;
+  padding: 0 !important;
   border: 1px solid rgba(255, 255, 255, 0.28);
   text-align: center; }
-  .company-item a {
-    display: flex;
-    min-height: 70px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff; }
+  .company-item:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.08));
+    content: ''; }
+  .company-item img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover; }
   .company-item-name {
+    position: absolute;
+    right: 12px;
+    bottom: 15px;
+    left: 12px;
+    z-index: 1;
     font-family: 'Work Sans', sans-serif;
     font-size: 21px;
-    font-weight: 700; }
-  .company-item-link {
-    margin-top: 8px;
-    color: rgba(255, 255, 255, 0.72);
-    font-size: 12px;
-    text-transform: uppercase; }
-  .company-item-link i {
-    margin-left: 4px; }
+    font-weight: 700;
+    color: #fff; }
 
 /*=====  End of CLIENT  ======*/
 /*==================================
