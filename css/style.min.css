@@ -605,6 +605,9 @@ section {
 .project-misc {
   padding: 90px 0; }
 
+.project-detector {
+  padding: 90px 0; }
+
 .misc-category {
   margin-top: 55px; }
   .misc-category h3 {
@@ -815,7 +818,8 @@ section {
   .project-wiring,
   .project-process,
   .project-impedance,
-  .project-misc {
+  .project-misc,
+  .project-detector {
     padding: 60px 0; }
   .project-image-frame img {
     height: 260px; }
