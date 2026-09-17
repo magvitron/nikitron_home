@@ -4,7 +4,7 @@
  */
 html, body {
   width: 100%;
-  overflow-x: hidden; }
+  overflow-x: clip; }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -1064,6 +1064,8 @@ section {
     min-height: 420px; }
   .jumbotron-single h1 {
     font-size: 2.5rem !important; }
+  .jumbotron {
+    overflow: clip; }
   .section-content {
     padding-top: 56px;
     padding-bottom: 56px; }
@@ -1076,27 +1078,21 @@ section {
     padding-left: 12px; }
   .feature-item {
     padding: 22px !important; }
-  .rectangle-1,
-  .rectangle-2,
-  .rectangle-transparent-1,
-  .rectangle-transparent-2,
-  .circle-1,
-  .circle-2,
-  .circle-3,
-  .triangle {
-    display: none; }
   .owl-carousel,
   .owl-carousel .owl-stage-outer,
   .client-slider,
   .client-holder {
-    overflow: hidden; }
+    width: 100%;
+    max-width: 100%;
+    overflow: clip;
+    contain: paint; }
   .grid-item {
     width: 100%; }
   .progress {
     height: 30px;
     font-size: 16px; } }
 
-@media (hover: none), (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
@@ -1111,10 +1107,6 @@ section {
   .circle-3,
   .triangle {
     animation: none; }
-  .bg-fixed {
-    background-attachment: scroll; } }
-
-@media (min-width: 768px) {
   .bg-fixed {
     background-attachment: scroll; } }
 
